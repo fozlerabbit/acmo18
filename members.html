@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ACMO Members Directory - Meet our dedicated team of 150+ members working to end child marriage">
+    <meta name="keywords" content="ACMO members, team directory, volunteers, child marriage prevention">
+    <title>Members Directory | ACMO - Anti Child Marriage Organization</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/members.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-shield-heart"></i>
+                <span>ACMO</span>
+            </div>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#about" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="about.html" class="dropdown-item">Our Story</a>
+                            <a href="team.html" class="dropdown-item">Leadership Team</a>
+                            <a href="mission.html" class="dropdown-item">Mission & Vision</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#programs" class="nav-link">Programs <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="programs.html" class="dropdown-item">All Programs</a>
+                            <a href="training.html" class="dropdown-item">Training & Workshops</a>
+                            <a href="campaigns.html" class="dropdown-item">Community Campaigns</a>
+                            <a href="competitions.html" class="dropdown-item">Competitions</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="partnerships.html" class="nav-link">Partnerships</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#resources" class="nav-link">Resources <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="members.html" class="dropdown-item active">Members Directory</a>
+                            <a href="events.html" class="dropdown-item">Events</a>
+                            <a href="blog.html" class="dropdown-item">Blog & News</a>
+                            <a href="library.html" class="dropdown-item">Resource Library</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="btn-secondary" onclick="openMembershipModal()">Join Us</button>
+                    <button class="theme-toggle" id="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="language-selector">
+                        <select id="language-select">
+                            <option value="en">EN</option>
+                            <option value="bn">বাং</option>
+                        </select>
+                    </div>
+                </div>
+            </nav>
+            
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>Members Directory</span>
+                </nav>
+                <h1>Our Community</h1>
+                <p>Meet the dedicated individuals who make ACMO's mission possible</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Members Statistics -->
+    <section class="members-stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-number" data-count="156">0</span>
+                        <span class="stat-label">Total Members</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-number" data-count="12">0</span>
+                        <span class="stat-label">Leadership Team</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-number" data-count="89">0</span>
+                        <span class="stat-label">Active Volunteers</span>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-number" data-count="25">0</span>
+                        <span class="stat-label">Districts</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Members Directory -->
+    <section class="members-directory">
+        <div class="container">
+            <!-- Search and Filters -->
+            <div class="directory-controls">
+                <div class="search-section">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="member-search" placeholder="Search members by name, position, or location...">
+                    </div>
+                </div>
+                
+                <div class="filter-section">
+                    <div class="filter-group">
+                        <label for="position-filter">Position:</label>
+                        <select id="position-filter">
+                            <option value="">All Positions</option>
+                            <option value="Leadership">Leadership</option>
+                            <option value="Program Coordinator">Program Coordinator</option>
+                            <option value="Field Officer">Field Officer</option>
+                            <option value="Volunteer">Volunteer</option>
+                            <option value="Research Associate">Research Associate</option>
+                            <option value="Community Liaison">Community Liaison</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="location-filter">District:</label>
+                        <select id="location-filter">
+                            <option value="">All Districts</option>
+                            <option value="Sirajganj">Sirajganj</option>
+                            <option value="Rajshahi">Rajshahi</option>
+                            <option value="Rangpur">Rangpur</option>
+                            <option value="Bogura">Bogura</option>
+                            <option value="Pabna">Pabna</option>
+                            <option value="Natore">Natore</option>
+                            <option value="Dhaka">Dhaka</option>
+                            <option value="Chittagong">Chittagong</option>
+                        </select>
+                    </div>
+                    
+                    <div class="view-controls">
+                        <button class="view-btn active" data-view="grid" title="Grid View">
+                            <i class="fas fa-th"></i>
+                        </button>
+                        <button class="view-btn" data-view="list" title="List View">
+                            <i class="fas fa-list"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Members Grid/List -->
+            <div class="members-container">
+                <div class="members-grid" id="members-grid">
+                    <!-- Loading placeholder -->
+                    <div class="loading-placeholder" id="loading-placeholder">
+                        <div class="loading-spinner"></div>
+                        <p>Loading members...</p>
+                    </div>
+                </div>
+                
+                <!-- Pagination -->
+                <div class="pagination" id="pagination">
+                    <button class="pagination-btn" id="prev-page" onclick="changePage(-1)">
+                        <i class="fas fa-chevron-left"></i>
+                        Previous
+                    </button>
+                    <div class="pagination-numbers" id="pagination-numbers"></div>
+                    <button class="pagination-btn" id="next-page" onclick="changePage(1)">
+                        Next
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Our Team CTA -->
+    <section class="join-team-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Want to Join Our Community?</h2>
+                <p>Become part of a passionate team working to end child marriage and empower communities across Bangladesh</p>
+                <div class="cta-actions">
+                    <button class="btn-primary" onclick="openMembershipModal()">
+                        <i class="fas fa-user-plus"></i>
+                        Apply for Membership
+                    </button>
+                    <a href="about.html" class="btn-outline">
+                        <i class="fas fa-info-circle"></i>
+                        Learn About ACMO
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-shield-heart"></i>
+                        <span>ACMO</span>
+                    </div>
+                    <p>Anti Child Marriage Organization - A youth-led initiative dedicated to preventing child marriage and empowering communities through education and awareness.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="partnerships.html">Partnerships</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="blog.html">News & Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="members.html">Members Directory</a></li>
+                        <li><a href="library.html">Resource Library</a></li>
+                        <li><a href="research.html">Research & Reports</a></li>
+                        <li><a href="guidelines.html">Guidelines</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>members@acmo-bd.org</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+880 1XXX-XXXXXX</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Sirajganj, Rajshahi Division, Bangladesh</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 ACMO - Anti Child Marriage Organization. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="sitemap.html">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Member Detail Modal -->
+    <div class="modal" id="member-modal">
+        <div class="modal-content member-modal-content">
+            <div class="modal-header">
+                <h2 id="member-modal-title">Member Details</h2>
+                <button class="modal-close" onclick="closeMemberModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="member-detail-content" id="member-detail-content">
+                    <!-- Dynamic content will be inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Membership Application Modal -->
+    <div class="modal" id="membership-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Join ACMO</h2>
+                <button class="modal-close" onclick="closeMembershipModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="membership-form" id="membership-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="district">District *</label>
+                        <select id="district" name="district" required>
+                            <option value="">Select District</option>
+                            <option value="Sirajganj">Sirajganj</option>
+                            <option value="Rajshahi">Rajshahi</option>
+                            <option value="Rangpur">Rangpur</option>
+                            <option value="Bogura">Bogura</option>
+                            <option value="Pabna">Pabna</option>
+                            <option value="Natore">Natore</option>
+                            <option value="Dhaka">Dhaka</option>
+                            <option value="Chittagong">Chittagong</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="organization">Organization/Institution</label>
+                        <input type="text" id="organization" name="organization">
+                    </div>
+                    <div class="form-group">
+                        <label for="position">Current Position/Role</label>
+                        <input type="text" id="position" name="position">
+                    </div>
+                    <div class="form-group">
+                        <label for="experience">Experience in Social Work/Activism</label>
+                        <select id="experience" name="experience">
+                            <option value="">Select Experience Level</option>
+                            <option value="None">No prior experience</option>
+                            <option value="1-2 years">1-2 years</option>
+                            <option value="3-5 years">3-5 years</option>
+                            <option value="5+ years">5+ years</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="motivation">Why do you want to join ACMO? *</label>
+                        <textarea id="motivation" name="motivation" rows="4" required placeholder="Tell us about your passion for ending child marriage and how you'd like to contribute..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="availability">Time Availability</label>
+                        <select id="availability" name="availability">
+                            <option value="">Select Availability</option>
+                            <option value="Full-time">Full-time (40+ hours/week)</option>
+                            <option value="Part-time">Part-time (20-40 hours/week)</option>
+                            <option value="Volunteer">Volunteer (5-20 hours/week)</option>
+                            <option value="Occasional">Occasional (as needed)</option>
+                        </select>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the <a href="terms.html" target="_blank">Terms and Conditions</a> and <a href="privacy.html" target="_blank">Privacy Policy</a></label>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Subscribe to our newsletter for updates and opportunities</label>
+                    </div>
+                    <button type="submit" class="btn-primary">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/members.js"></script>
+    <script>
+        // Initialize members page
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeMembersPage();
+        });
+    </script>
+</body>
+</html>

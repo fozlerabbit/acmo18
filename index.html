@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ACMO - Anti Child Marriage Organization, a youth-led initiative dedicated to preventing child marriage and empowering communities">
+    <meta name="keywords" content="child marriage, education, empowerment, youth organization, social welfare">
+    <meta name="author" content="ACMO">
+    <title>ACMO - Anti Child Marriage Organization | Empowering Communities</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-shield-heart"></i>
+                <span>ACMO</span>
+            </div>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#about" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="about.html" class="dropdown-item">Our Story</a>
+                            <a href="team.html" class="dropdown-item">Leadership Team</a>
+                            <a href="mission.html" class="dropdown-item">Mission & Vision</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#programs" class="nav-link">Programs <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="programs.html" class="dropdown-item">All Programs</a>
+                            <a href="training.html" class="dropdown-item">Training & Workshops</a>
+                            <a href="campaigns.html" class="dropdown-item">Community Campaigns</a>
+                            <a href="competitions.html" class="dropdown-item">Competitions</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="partnerships.html" class="nav-link">Partnerships</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#resources" class="nav-link">Resources <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="members.html" class="dropdown-item">Members Directory</a>
+                            <a href="events.html" class="dropdown-item">Events</a>
+                            <a href="blog.html" class="dropdown-item">Blog & News</a>
+                            <a href="library.html" class="dropdown-item">Resource Library</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="btn-secondary" onclick="openMembershipModal()">Join Us</button>
+                    <button class="theme-toggle" id="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="language-selector">
+                        <select id="language-select">
+                            <option value="en">EN</option>
+                            <option value="bn">বাং</option>
+                        </select>
+                    </div>
+                </div>
+            </nav>
+            
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Ending Child Marriage Through 
+                    <span class="gradient-text">Education & Empowerment</span>
+                </h1>
+                <p class="hero-description">
+                    A youth-led initiative dedicated to preventing child marriage and empowering communities through education, awareness, and sustainable development programs.
+                </p>
+                <div class="hero-actions">
+                    <a href="#about" class="btn-primary">Learn More</a>
+                    <a href="contact.html" class="btn-outline">Get Involved</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="150">0</span>
+                        <span class="stat-label">Active Members</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="25">0</span>
+                        <span class="stat-label">Communities Reached</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="500">0</span>
+                        <span class="stat-label">Lives Impacted</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/hero-illustration.svg" alt="ACMO Empowerment">
+            </div>
+        </div>
+        <div class="hero-background">
+            <div class="floating-element" style="top: 10%; left: 10%;"></div>
+            <div class="floating-element" style="top: 20%; right: 15%;"></div>
+            <div class="floating-element" style="bottom: 30%; left: 20%;"></div>
+            <div class="floating-element" style="bottom: 10%; right: 10%;"></div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Mission</h2>
+                <p>Building a world where every child can grow up safe, educated, and empowered</p>
+            </div>
+            <div class="mission-grid">
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Education First</h3>
+                    <p>Promoting education as the key to breaking the cycle of child marriage and empowering young minds.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Community Engagement</h3>
+                    <p>Working directly with communities to change mindsets and create sustainable social transformation.</p>
+                </div>
+                <div class="mission-card">
+                    <div class="mission-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Youth Leadership</h3>
+                    <p>Empowering young leaders to drive change and become advocates for children's rights in their communities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Spotlight -->
+    <section class="partnership-spotlight">
+        <div class="container">
+            <div class="partnership-content">
+                <div class="partnership-text">
+                    <h2>Strategic Partnership with ScriptySphere</h2>
+                    <p>We're proud to announce our Memorandum of Understanding (MoU) with ScriptySphere, a leading technology organization. This partnership brings innovative digital solutions to our mission of ending child marriage.</p>
+                    <div class="partnership-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-laptop-code"></i>
+                            <span>Technology Integration</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-database"></i>
+                            <span>Data-Driven Solutions</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Mobile Platforms</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Impact Tracking</span>
+                        </div>
+                    </div>
+                    <a href="partnerships.html" class="btn-primary">View All Partnerships</a>
+                </div>
+                <div class="partnership-logos">
+                    <div class="logo-item">
+                        <img src="assets/images/acmo-logo.png" alt="ACMO Logo">
+                        <span>ACMO</span>
+                    </div>
+                    <div class="partnership-connector">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="logo-item">
+                        <img src="assets/images/scriptysphere-logo.png" alt="ScriptySphere Logo">
+                        <span>ScriptySphere</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section class="programs-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Programs</h2>
+                <p>Comprehensive initiatives designed to create lasting change</p>
+            </div>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="assets/images/education-program.jpg" alt="Education Program">
+                    </div>
+                    <div class="program-content">
+                        <h3>Education & Awareness</h3>
+                        <p>Conducting workshops and seminars to educate communities about the harmful effects of child marriage.</p>
+                        <a href="programs.html#education" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="assets/images/capacity-building.jpg" alt="Capacity Building">
+                    </div>
+                    <div class="program-content">
+                        <h3>Capacity Building</h3>
+                        <p>Training local leaders and volunteers to become effective advocates against child marriage.</p>
+                        <a href="programs.html#capacity" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-image">
+                        <img src="assets/images/community-engagement.jpg" alt="Community Engagement">
+                    </div>
+                    <div class="program-content">
+                        <h3>Community Campaigns</h3>
+                        <p>Grassroots campaigns that engage entire communities in the fight against child marriage.</p>
+                        <a href="programs.html#campaigns" class="program-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="news-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest News & Updates</h2>
+                <a href="blog.html" class="section-link">View All News</a>
+            </div>
+            <div class="news-grid">
+                <article class="news-card featured">
+                    <div class="news-image">
+                        <img src="assets/images/news-1.jpg" alt="Partnership Announcement">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">December 15, 2024</span>
+                            <span class="news-category">Partnership</span>
+                        </div>
+                        <h3>ACMO Signs MoU with ScriptySphere</h3>
+                        <p>Historic partnership brings technology solutions to anti-child marriage initiatives...</p>
+                        <a href="blog/partnership-scriptysphere.html" class="news-link">Read More</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="assets/images/news-2.jpg" alt="Workshop Success">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">December 10, 2024</span>
+                            <span class="news-category">Events</span>
+                        </div>
+                        <h3>Successful Workshop in Rural Communities</h3>
+                        <p>Over 200 community members participated in our latest awareness workshop...</p>
+                        <a href="blog/workshop-success.html" class="news-link">Read More</a>
+                    </div>
+                </article>
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="assets/images/news-3.jpg" alt="Impact Report">
+                    </div>
+                    <div class="news-content">
+                        <div class="news-meta">
+                            <span class="news-date">December 5, 2024</span>
+                            <span class="news-category">Impact</span>
+                        </div>
+                        <h3>2024 Impact Report Released</h3>
+                        <p>Our annual impact report shows significant progress in preventing child marriages...</p>
+                        <a href="blog/impact-report-2024.html" class="news-link">Read More</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Impact Stories</h2>
+                <p>Hear from the communities we've empowered</p>
+            </div>
+            <div class="testimonials-carousel">
+                <div class="testimonial-card active">
+                    <div class="testimonial-content">
+                        <p>"ACMO's education program changed our village's perspective on child marriage. Now, all our girls complete their education before considering marriage."</p>
+                        <div class="testimonial-author">
+                            <img src="assets/images/testimonial-1.jpg" alt="Fatima Rahman">
+                            <div class="author-info">
+                                <h4>Fatima Rahman</h4>
+                                <span>Village Leader, Rajshahi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"As a young leader trained by ACMO, I've been able to prevent three child marriages in my community and help girls continue their studies."</p>
+                        <div class="testimonial-author">
+                            <img src="assets/images/testimonial-2.jpg" alt="Mohammed Hassan">
+                            <div class="author-info">
+                                <h4>Mohammed Hassan</h4>
+                                <span>Youth Advocate, Sirajganj</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The partnership with ScriptySphere has brought innovative solutions that help us track our impact and reach more communities effectively."</p>
+                        <div class="testimonial-author">
+                            <img src="assets/images/testimonial-3.jpg" alt="Dr. Rashida Begum">
+                            <div class="author-info">
+                                <h4>Dr. Rashida Begum</h4>
+                                <span>ACMO Board Member</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-btn prev" onclick="prevTestimonial()">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn next" onclick="nextTestimonial()">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Join Our Mission</h2>
+                <p>Together, we can end child marriage and empower every child to reach their full potential</p>
+                <div class="cta-actions">
+                    <button class="btn-primary" onclick="openMembershipModal()">Become a Member</button>
+                    <a href="contact.html" class="btn-outline">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-shield-heart"></i>
+                        <span>ACMO</span>
+                    </div>
+                    <p>Anti Child Marriage Organization - A youth-led initiative dedicated to preventing child marriage and empowering communities through education and awareness.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="partnerships.html">Partnerships</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="blog.html">News & Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="members.html">Members Directory</a></li>
+                        <li><a href="library.html">Resource Library</a></li>
+                        <li><a href="research.html">Research & Reports</a></li>
+                        <li><a href="guidelines.html">Guidelines</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@acmo-bd.org</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+880 1XXX-XXXXXX</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Sirajganj, Rajshahi Division, Bangladesh</span>
+                        </div>
+                    </div>
+                    <div class="newsletter-signup">
+                        <h4>Newsletter</h4>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 ACMO - Anti Child Marriage Organization. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="sitemap.html">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Membership Modal -->
+    <div class="modal" id="membership-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Join ACMO</h2>
+                <button class="modal-close" onclick="closeMembershipModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="membership-form" id="membership-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="organization">Organization/Institution</label>
+                        <input type="text" id="organization" name="organization">
+                    </div>
+                    <div class="form-group">
+                        <label for="position">Position/Role</label>
+                        <input type="text" id="position" name="position">
+                    </div>
+                    <div class="form-group">
+                        <label for="motivation">Why do you want to join ACMO?</label>
+                        <textarea id="motivation" name="motivation" rows="4"></textarea>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the <a href="terms.html">Terms and Conditions</a></label>
+                    </div>
+                    <button type="submit" class="btn-primary">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/forms.js"></script>
+</body>
+</html>
