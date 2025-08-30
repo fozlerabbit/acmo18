@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact ACMO - Get in touch with us for partnerships, volunteering, or support. Located in Sirajganj, Bangladesh">
+    <meta name="keywords" content="contact ACMO, child marriage organization contact, Bangladesh NGO contact">
+    <title>Contact Us | ACMO - Anti Child Marriage Organization</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-shield-heart"></i>
+                <span>ACMO</span>
+            </div>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#about" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="about.html" class="dropdown-item">Our Story</a>
+                            <a href="team.html" class="dropdown-item">Leadership Team</a>
+                            <a href="mission.html" class="dropdown-item">Mission & Vision</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#programs" class="nav-link">Programs <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="programs.html" class="dropdown-item">All Programs</a>
+                            <a href="training.html" class="dropdown-item">Training & Workshops</a>
+                            <a href="campaigns.html" class="dropdown-item">Community Campaigns</a>
+                            <a href="competitions.html" class="dropdown-item">Competitions</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="partnerships.html" class="nav-link">Partnerships</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#resources" class="nav-link">Resources <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="members.html" class="dropdown-item">Members Directory</a>
+                            <a href="events.html" class="dropdown-item">Events</a>
+                            <a href="blog.html" class="dropdown-item">Blog & News</a>
+                            <a href="library.html" class="dropdown-item">Resource Library</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="btn-secondary" onclick="openMembershipModal()">Join Us</button>
+                    <button class="theme-toggle" id="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="language-selector">
+                        <select id="language-select">
+                            <option value="en">EN</option>
+                            <option value="bn">বাং</option>
+                        </select>
+                    </div>
+                </div>
+            </nav>
+            
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>Contact</span>
+                </nav>
+                <h1>Get In Touch</h1>
+                <p>We'd love to hear from you. Reach out to us for partnerships, volunteering, or any questions</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Send us a Message</h2>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                    <option value="volunteer">Volunteer Interest</option>
+                                    <option value="media">Media Inquiry</option>
+                                    <option value="support">Support Request</option>
+                                    <option value="feedback">Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="organization">Organization (Optional)</label>
+                            <input type="text" id="organization" name="organization">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell us how we can help you or how you'd like to get involved..."></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="subscribe" name="subscribe">
+                            <label for="subscribe">Subscribe to our newsletter for updates and opportunities</label>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-section">
+                    <h2>Contact Information</h2>
+                    
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
