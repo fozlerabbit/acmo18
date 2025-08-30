@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ACMO Programs - Comprehensive initiatives to prevent child marriage through education, capacity building, and community engagement">
+    <meta name="keywords" content="child marriage prevention programs, education initiatives, community campaigns, capacity building">
+    <title>Programs & Initiatives | ACMO - Anti Child Marriage Organization</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-shield-heart"></i>
+                <span>ACMO</span>
+            </div>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#about" class="nav-link">About <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="about.html" class="dropdown-item">Our Story</a>
+                            <a href="team.html" class="dropdown-item">Leadership Team</a>
+                            <a href="mission.html" class="dropdown-item">Mission & Vision</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#programs" class="nav-link active">Programs <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="programs.html" class="dropdown-item active">All Programs</a>
+                            <a href="training.html" class="dropdown-item">Training & Workshops</a>
+                            <a href="campaigns.html" class="dropdown-item">Community Campaigns</a>
+                            <a href="competitions.html" class="dropdown-item">Competitions</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="partnerships.html" class="nav-link">Partnerships</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#resources" class="nav-link">Resources <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="members.html" class="dropdown-item">Members Directory</a>
+                            <a href="events.html" class="dropdown-item">Events</a>
+                            <a href="blog.html" class="dropdown-item">Blog & News</a>
+                            <a href="library.html" class="dropdown-item">Resource Library</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <button class="btn-secondary" onclick="openMembershipModal()">Join Us</button>
+                    <button class="theme-toggle" id="theme-toggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <div class="language-selector">
+                        <select id="language-select">
+                            <option value="en">EN</option>
+                            <option value="bn">বাং</option>
+                        </select>
+                    </div>
+                </div>
+            </nav>
+            
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="page-header-content">
+                <nav class="breadcrumb">
+                    <a href="index.html">Home</a>
+                    <span>/</span>
+                    <span>Programs</span>
+                </nav>
+                <h1>Programs & Initiatives</h1>
+                <p>Comprehensive programs designed to eliminate child marriage and empower communities</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Categories -->
+    <section class="program-categories">
+        <div class="container">
+            <div class="categories-grid">
+                <div class="category-card education" id="education">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h2>Education & Awareness</h2>
+                        <p>Building knowledge and changing mindsets through comprehensive education programs</p>
+                    </div>
+                    
+                    <div class="category-programs">
+                        <div class="program-item">
+                            <h4>Community Awareness Workshops</h4>
+                            <p>Interactive sessions educating communities about the harmful effects of child marriage and promoting girls' education.</p>
+                            <div class="program-stats">
+                                <span><i class="fas fa-users"></i> 5,000+ participants</span>
+                                <span><i class="fas fa-map-marker-alt"></i> 25 districts</span>
+                            </div>
+                        </div>
+                        
+                        <div class="program-item">
+                            <h4>School-Based Education Programs</h4>
+                            <p>Curriculum-integrated programs in schools focusing on child rights, gender equality, and life skills development.</p>
+                            <div class="program-stats">
+                                <span><i class="fas fa-school"></i> 150 schools</span>
+                                <span><i class="fas fa-child"></i> 8,000+ students</span>
+                            </div>
+                        </div>
+                        
+                        <div class="program-item">
+                            <h4>Digital Awareness Campaigns</h4>
+                            <p>Social media and digital platform campaigns leveraging technology partnership with ScriptySphere.</p>
+                            <div class="program-stats">
+                                <span><i class="fas fa-eye"></i> 100K+ reach</span>
+                                <span><i class="fas fa-share"></i> 5K+ shares</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-card capacity" id="capacity">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h2>Capacity Building</h2>
+                        <p>Empowering local leaders and volunteers with skills and knowledge</p>
+                    </div>
+                    
+                    <div class="category-programs">
+                        <div class="program-item">
+                            <h4>Leadership Development Program</h4>
+                            <p>Comprehensive training for young leaders to become effective advocates against child marriage.</p>
+                            <div class="program-stats">
+                                <span><i class="fas fa-crown"></i> 200+ leaders trained</span>
+                                <span><i class="fas fa-calendar"></i> 6-month program</span>
+                            </div>
+                        </div>
+                        
+                        <div class="program-item">
+                            <h4>Volunteer Training Workshops</h4>
+                            <p>Regular training sessions for volunteers on community engagement, counseling, and program implementation.</p>
+                            <div class="program-stats">
+                                <span><i class="fas fa-hands-helping"></i> 300+ volunteers</span>
+                                <span><i class="fas fa-certificate"></i> Certified training</span>
+                            </div>
+                        </div>
+                        
+                        <div class="program-item">
+                            <h4>Digital Skills Training</h4>
+                            <p>Technology training programs developed in partnership with ScriptySphere for enhanced program delivery.</p>
+                            <div class="program-stats">
+                                <span><i class="fas fa-laptop"></i> 150+ trained</span>
+                                <span><i class="fas fa-code"></i> Tech-enabled</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-card campaigns" id="campaigns">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h2>Community Campaigns</h2>
+                        <p>Grassroots movements that engage entire communities</p>
+                    </div>
+                    
+                    <div class="category-programs">
+                        <div class="program-item">
+                            <h4>"Education First" Campaign</h4>
+                            <p>Community-wide initiative promoting the value of girls' education over early marriage.</p>
+                            <div class="program-stats">
+                                <span><i class="fas fa-home"></i> 2,000+ families</span>
+                                <span><i class="fas fa-female"></i> 500+ girls supported</span>
+                            </div>
+                        </div>
+                        
+                        <div class="program-item">
+                            <h4>Village Champion Network</h4>
+                            <p>Training local champions to be advocates for child rights in their own communities.</p>
+                            <div class="program-stats">
+                                <span><i class="fas fa-medal"></i> 100+ champions</span>
+                                <span><i class="fas fa-village"></i> 50+ villages</span>
+                            </div>
+                        </div>
+                        
+                        <div class="program-item">
+                            <h4>Youth Engagement Initiative</h4>
+                            <p>Peer-to-peer programs where young people educate and support each other.</p>
+                            <div class="program-stats">
+                                <span><i class="fas fa-users"></i> 1,500+ youth</span>
+                                <span><i class="fas fa-comments"></i> Peer support</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Integration -->
+    <section class="tech-integration">
+        <div class="container">
+            <div class="tech-content">
+                <div class="tech-text">
+                    <h2>Technology-Enhanced Programs</h2>
+                    <p>In partnership with <strong>ScriptySphere</strong>, we're revolutionizing how we deliver and track our programs</p>
+                    
+                    <div class="tech-features">
+                        <div class="tech-feature">
+                            <i class="fas fa-mobile-alt"></i>
+                            <div>
+                                <h4>Mobile Data Collection</h4>
+                                <p>Real-time data gathering from field workers using mobile applications</p>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-feature">
+                            <i class="fas fa-chart-bar"></i>
+                            <div>
+                                <h4>Impact Analytics</h4>
+                                <p>Advanced dashboards tracking program effectiveness and community changes</p>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-feature">
+                            <i class="fas fa-laptop"></i>
+                            <div>
+                                <h4>Online Learning Platform</h4>
+                                <p>Digital training modules accessible to volunteers and community leaders</p>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4>Secure Reporting System</h4>
+                                <p>Confidential platform for reporting child marriage cases and seeking help</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="tech-visual">
+                    <div class="tech-showcase">
+                        <div class="device-mockup">
+                            <img src="assets/images/mobile-app-mockup.png" alt="ACMO Mobile App">
+                        </div>
+                        <div class="partnership-badge">
+                            <span>Powered by</span>
+                            <img src="assets/images/scriptysphere-logo.png" alt="ScriptySphere">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Impact -->
+    <section class="program-impact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Impact</h2>
+                <p>Measurable results from our comprehensive programs</p>
+            </div>
+            
+            <div class="impact-grid">
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="impact-stats">
+                        <span class="impact-number" data-count="500">0</span>
+                        <span class="impact-label">Girls Kept in School</span>
+                    </div>
+                    <p>Through our education programs, we've helped 500+ girls continue their studies instead of getting married early.</p>
+                </div>
+                
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="impact-stats">
+                        <span class="impact-number" data-count="75">0</span>
+                        <span class="impact-label">Child Marriages Prevented</span>
+                    </div>
+                    <p>Direct intervention and community engagement have successfully prevented 75+ child marriages.</p>
+                </div>
+                
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="impact-stats">
+                        <span class="impact-number" data-count="10000">0</span>
+                        <span class="impact-label">Community Members Reached</span>
+                    </div>
+                    <p>Our awareness campaigns have directly reached over 10,000 community members across Bangladesh.</p>
+                </div>
+                
+                <div class="impact-card">
+                    <div class="impact-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="impact-stats">
+                        <span class="impact-number" data-count="200">0</span>
+                        <span class="impact-label">Leaders Trained</span>
+                    </div>
+                    <p>We've trained 200+ community leaders and volunteers to become advocates for child rights.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Involved -->
+    <section class="get-involved">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get Involved in Our Programs</h2>
+                <p>Multiple ways to contribute to our mission</p>
+            </div>
+            
+            <div class="involvement-options">
+                <div class="involvement-card">
+                    <div class="involvement-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3>Become a Volunteer</h3>
+                    <p>Join our team of dedicated volunteers working directly with communities to prevent child marriage.</p>
+                    <a href="volunteer.html" class="btn-primary">Volunteer Now</a>
+                </div>
+                
+                <div class="involvement-card">
+                    <div class="involvement-icon">
+                        <i class="fas fa-donate"></i>
+                    </div>
+                    <h3>Support Our Programs</h3>
+                    <p>Your financial support helps us expand our reach and impact more communities across Bangladesh.</p>
+                    <a href="donate.html" class="btn-primary">Donate</a>
+                </div>
+                
+                <div class="involvement-card">
+                    <div class="involvement-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Partner With Us</h3>
+                    <p>Collaborate with us to bring innovative solutions like our partnership with ScriptySphere.</p>
+                    <a href="partnerships.html" class="btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-shield-heart"></i>
+                        <span>ACMO</span>
+                    </div>
+                    <p>Anti Child Marriage Organization - A youth-led initiative dedicated to preventing child marriage and empowering communities through education and awareness.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Programs</h3>
+                    <ul class="footer-links">
+                        <li><a href="#education">Education & Awareness</a></li>
+                        <li><a href="#capacity">Capacity Building</a></li>
+                        <li><a href="#campaigns">Community Campaigns</a></li>
+                        <li><a href="training.html">Training Workshops</a></li>
+                        <li><a href="competitions.html">Competitions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Get Involved</h3>
+                    <ul class="footer-links">
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                        <li><a href="donate.html">Donate</a></li>
+                        <li><a href="partnerships.html">Partner with Us</a></li>
+                        <li><a href="events.html">Attend Events</a></li>
+                        <li><a href="advocate.html">Become an Advocate</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>programs@acmo-bd.org</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+880 1XXX-XXXXXX</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Sirajganj, Rajshahi Division, Bangladesh</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 ACMO - Anti Child Marriage Organization. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="sitemap.html">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Membership Modal -->
+    <div class="modal" id="membership-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Join ACMO</h2>
+                <button class="modal-close" onclick="closeMembershipModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="membership-form" id="membership-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="organization">Organization/Institution</label>
+                        <input type="text" id="organization" name="organization">
+                    </div>
+                    <div class="form-group">
+                        <label for="motivation">Why do you want to join ACMO?</label>
+                        <textarea id="motivation" name="motivation" rows="4"></textarea>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the <a href="terms.html">Terms and Conditions</a></label>
+                    </div>
+                    <button type="submit" class="btn-primary">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Programs page specific styles and functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const programsStyles = `
+                .program-categories { padding: 6rem 0; background: white; }
+                .categories-grid { display: flex; flex-direction: column; gap: 3rem; }
+                .category-card { background: var(--light-color); border-radius: 16px; padding: 2rem; border: 1px solid var(--border-color); }
+                .category-header { text-align: center; margin-bottom: 2rem; }
+                .category-icon { width: 80px; height: 80px; background: var(--gradient-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; color: white; font-size: 2rem; }
+                .category-header h2 { color: var(--text-primary); margin-bottom: 0.5rem; }
+                .category-programs { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+                .program-item { background: white; padding: 1.5rem; border-radius: 12px; box-shadow: var(--shadow-md); }
+                .program-item h4 { color: var(--text-primary); margin-bottom: 0.75rem; }
+                .program-item p { color: var(--text-secondary); margin-bottom: 1rem; }
+                .program-stats { display: flex; gap: 1rem; flex-wrap: wrap; }
+                .program-stats span { background: var(--primary-color); color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; display: flex; align-items: center; gap: 0.25rem; }
+                .tech-integration { padding: 6rem 0; background: var(--gradient-accent); }
+                .tech-content { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+                .tech-text h2 { color: var(--text-primary); margin-bottom: 1rem; }
+                .tech-features { margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem; }
+                .tech-feature { display: flex; align-items: center; gap: 1rem; background: rgba(255,255,255,0.9); padding: 1rem; border-radius: 8px; }
+                .tech-feature i { color: var(--primary-color); font-size: 1.25rem; width: 30px; }
+                .tech-visual { display: flex; justify-content: center; }
+                .tech-showcase { position: relative; }
+                .device-mockup img { max-width: 300px; height: auto; }
+                .partnership-badge { position: absolute; bottom: -20px; left: 50%; transform: translateX(-50%); background: white; padding: 0.5rem 1rem; border-radius: 20px; box-shadow: var(--shadow-md); display: flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; }
+                .partnership-badge img { width: 20px; height: 20px; }
+                .program-impact { padding: 6rem 0; background: white; }
+                .impact-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+                .impact-card { background: var(--light-color); padding: 2rem; border-radius: 12px; text-align: center; }
+                .impact-icon { width: 60px; height: 60px; background: var(--gradient-primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; margin: 0 auto 1rem; font-size: 1.5rem; }
+                .impact-stats { margin-bottom: 1rem; }
+                .impact-number { display: block; font-size: 3rem; font-weight: 700; color: var(--primary-color); }
+                .impact-label { font-size: 0.9rem; color: var(--text-secondary); font-weight: 500; }
+                .get-involved { padding: 6rem 0; background: var(--gradient-primary); color: white; }
+                .involvement-options { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+                .involvement-card { background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 12px; text-align: center; }
+                .involvement-icon { width: 60px; height: 60px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-size: 1.5rem; }
+                .involvement-card h3 { margin-bottom: 1rem; }
+                .involvement-card p { margin-bottom: 1.5rem; opacity: 0.9; }
+                .involvement-card .btn-primary { background: white; color: var(--primary-color); }
+                
+                @media (max-width: 768px) {
+                    .tech-content { grid-template-columns: 1fr; }
+                    .impact-grid { grid-template-columns: 1fr; }
+                    .involvement-options { grid-template-columns: 1fr; }
+                    .categories-grid { gap: 2rem; }
+                    .category-programs { grid-template-columns: 1fr; }
+                }
+            `;
+            
+            const styleSheet = document.createElement('style');
+            styleSheet.textContent = programsStyles;
+            document.head.appendChild(styleSheet);
+            
+            // Initialize impact counters
+            initializeProgramCounters();
+        });
+        
+        function initializeProgramCounters() {
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const counters = entry.target.querySelectorAll('.impact-number[data-count]');
+                        counters.forEach(counter => {
+                            animateCounter(counter);
+                        });
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            const impactSection = document.querySelector('.program-impact');
+            if (impactSection) {
+                observer.observe(impactSection);
+            }
+        }
+        
+        function animateCounter(element) {
+            const target = parseInt(element.getAttribute('data-count'));
+            const duration = 2000;
+            const step = target / (duration / 16);
+            let current = 0;
+            
+            const timer = setInterval(() => {
+                current += step;
+                element.textContent = Math.floor(current).toLocaleString();
+                
+                if (current >= target) {
+                    element.textContent = target.toLocaleString();
+                    clearInterval(timer);
+                }
+            }, 16);
+        }
+    </script>
+</body>
+</html>
